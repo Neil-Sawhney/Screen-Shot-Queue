@@ -1,122 +1,90 @@
 import time
-from pynput import mouse
-from pynput.keyboard import Key, Controller
-import pyscreenshot as ImageGrab
+from pynput import mouse, keyboard
 from PIL import Image
- 
+import mss
+import glob
 from io import BytesIO
 import win32clipboard
+import os
 
 class stuff(object):
-    startPoint = []
+    imgNum = 0
+
     leftArray = []
-    scrollArray = []
     sleepTime = 0.1
 
-    def on_move(self, x, y):
-        print('Pointer moved to {0}'.format(
-            (x, y)))
 
-    def on_click(self, x, y, button, pressed):
-        # if left click, add coordinates to array
-        if not(pressed):
-            if self.startPoint == []:
-                self.startPoint = [x,y]
-                print("start point set to {0}".format(self.startPoint))
-                return True
-        if button == mouse.Button.left:
-            if not(pressed):
-                self.leftArray.append([ x, y ])
-                print(self.leftArray)
-                if(len(self.leftArray) % 2 == 0):
-                    self.scrollArray.append(0)
-                    print(self.scrollArray)
-        if button == mouse.Button.right:
-            if not(pressed):
-                if self.leftArray == []:
-                    self.startPoint = []
-                    print("start point reset")
-                    return True
-                #pop the last element in leftArray
-                try:
-                    self.leftArray.pop()
-
-                    if(len(self.leftArray) % 2 == 0):
-                        self.scrollArray[-2] += self.scrollArray[-1]
-                        self.scrollArray.pop()
-                except IndexError:
-                    print("No more elements in array")
-                print(self.leftArray)
-
-                if(len(self.leftArray) % 2 == 0):
-                    print(self.scrollArray)
-        # if middle mouse click
-        if button == mouse.Button.middle:
-            if not(pressed):
-                return False
-
-    def on_scroll(self, x, y, dx, dy):
-        if(len(self.leftArray) % 2 == 0):
-            self.scrollArray[-1] += dy
-            print(self.scrollArray)
-
-    def send_to_clipboard(self, clip_type, data):
-        win32clipboard.OpenClipboard()
-        win32clipboard.EmptyClipboard()
-        win32clipboard.SetClipboardData(clip_type, data)
-        win32clipboard.CloseClipboard()
- 
-    def grab(self, x1y1, x2y2):
-        im = ImageGrab.grab(bbox=(x1y1[0], x1y1[1], x2y2[0], x2y2[1]))
-        im.save("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im.png")
-        image = Image.open("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im.png")
+    def send_to_clipboard(self, imgNum):
+        image = Image.open("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im" + str(imgNum) + ".png")
         output = BytesIO()
         image.convert("RGB").save(output, "BMP")
         data = output.getvalue()[14:]
         output.close()
-        self.send_to_clipboard(win32clipboard.CF_DIB, data)
+        win32clipboard.OpenClipboard()
+        win32clipboard.EmptyClipboard()
+        win32clipboard.SetClipboardData(win32clipboard.CF_DIB, data)
+        win32clipboard.CloseClipboard()
+ 
+    def grab(self, x1y1, x2y2):
+        with mss.mss() as sct:
+            monitor = {"top": x1y1[1], "left": x1y1[0], "width": x2y2[0] - x1y1[0], "height": x2y2[1] - x1y1[1]}
+            output = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im" + str(self.imgNum) + ".png"
 
-    #move mouse to first point
-    def clickOrigin(self, currentIndex):
-        for i in range(currentIndex):
-            mouse.Controller().scroll(dy = -s.scrollArray[i], dx =0)
-            time.sleep(s.sleepTime)
+            sct_img = sct.grab(monitor)
+            mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
+        print("im" + str(self.imgNum) + " saved")
+        self.imgNum += 1
 
-        #left click
-        mouse.Controller().position = self.startPoint
-        mouse.Controller().click(mouse.Button.left)
+    def on_click(self, x, y, button, pressed):
+        # if left click, add coordinates to array
+        if button == mouse.Button.middle:
+            if not(pressed):
+                self.leftArray.append([ x, y ])
+                print(self.leftArray)
+                if(len(self.leftArray) % 2 == 0):
+                    self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
+        if button == mouse.Button.right:
+            if not(pressed):
+                #pop the last element in leftArray
+                try:
 
-    def scrollToLocation(self, currentIndex):
-        for i in range(currentIndex):
-            mouse.Controller().scroll(dy = s.scrollArray[i], dx =0)
-            time.sleep(s.sleepTime)
+                    if(len(self.leftArray) % 2 == 0):
+                        self.leftArray.pop()
+                        self.leftArray.pop()
+                        print("im" + str(self.imgNum) + " removed")
+                        self.imgNum -= 1
+                    else:
+                        self.leftArray.pop()
 
+                except IndexError:
+                    print("No more elements in array")
+                print(self.leftArray)
+
+        if button == mouse.Button.left:
+            if not(pressed):
+                return False
+
+#remove all images
+dir = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images"
+filelist = glob.glob(os.path.join(dir, "*.png"))
+for f in filelist:
+    os.remove(f)
 
 s = stuff()
 with mouse.Listener(
         on_click=s.on_click,
-        on_scroll=s.on_scroll) as listener:
+        ) as listener:
     listener.join()
 
 ###################### DO STUFF ##################### 
 
-keyboard= Controller()
+for i in range(s.imgNum):
+    s.send_to_clipboard(i)
 
-#scroll back to the top
-for i in range(len(s.scrollArray)):
-    mouse.Controller().scroll(dy = -s.scrollArray[i], dx =0)
     time.sleep(s.sleepTime)
-
-
-for i in range(0, len(s.leftArray), 2):
-
-    s.grab(s.leftArray[i], s.leftArray[i+1])
-    s.clickOrigin(i)
-    time.sleep(s.sleepTime)
-
     #press ctrl v
-    keyboard.press(Key.ctrl)
-    keyboard.press('v')
-    keyboard.release(Key.ctrl)
-    keyboard.release('v')
+    keyboard.Controller().press(keyboard.Key.ctrl)
+    keyboard.Controller().press('v')
+    keyboard.Controller().release(keyboard.Key.ctrl)
+    keyboard.Controller().release('v')
     time.sleep(s.sleepTime)
