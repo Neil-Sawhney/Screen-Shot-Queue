@@ -61,8 +61,12 @@ class stuff(object):
                 print(self.leftArray)
 
         if button == mouse.Button.left:
-            if not(pressed):
+            if not(pressed) and self.leftArray != []:
                 return False
+
+    def on_press(self, key):
+        if key == keyboard.Key.esc:
+            return False
 
 #remove all images
 dir = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images"
@@ -74,6 +78,11 @@ s = stuff()
 with mouse.Listener(
         on_click=s.on_click,
         ) as listener:
+    listener.join()
+
+with keyboard.Listener(
+        on_press=s.on_press,
+) as listener:
     listener.join()
 
 ###################### DO STUFF ##################### 
