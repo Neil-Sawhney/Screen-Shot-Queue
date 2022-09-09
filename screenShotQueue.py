@@ -11,7 +11,7 @@ class stuff(object):
     imgNum = 0
 
     leftArray = []
-    sleepTime = 0.1
+    sleepTime = 0.2
 
 
     def send_to_clipboard(self, imgNum):
