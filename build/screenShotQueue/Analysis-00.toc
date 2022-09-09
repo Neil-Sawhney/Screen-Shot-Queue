@@ -614,8 +614,8 @@
   ('_socket', 'C:\\Python310\\DLLs\\_socket.pyd', 'EXTENSION'),
   ('_lzma', 'C:\\Python310\\DLLs\\_lzma.pyd', 'EXTENSION'),
   ('_bz2', 'C:\\Python310\\DLLs\\_bz2.pyd', 'EXTENSION'),
-  ('_ssl', 'C:\\Python310\\DLLs\\_ssl.pyd', 'EXTENSION'),
   ('unicodedata', 'C:\\Python310\\DLLs\\unicodedata.pyd', 'EXTENSION'),
+  ('_ssl', 'C:\\Python310\\DLLs\\_ssl.pyd', 'EXTENSION'),
   ('win32clipboard',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\.venv\\lib\\site-packages\\win32\\win32clipboard.pyd',

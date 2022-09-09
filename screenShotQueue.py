@@ -37,12 +37,6 @@ class stuff(object):
 
     def on_click(self, x, y, button, pressed):
         # if left click, add coordinates to array
-        if button == mouse.Button.middle:
-            if not(pressed):
-                self.leftArray.append([ x, y ])
-                print(self.leftArray)
-                if(len(self.leftArray) % 2 == 0):
-                    self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
         if button == mouse.Button.right:
             if not(pressed):
                 #pop the last element in leftArray
@@ -59,12 +53,23 @@ class stuff(object):
                 except IndexError:
                     print("No more elements in array")
                 print(self.leftArray)
+        if button == mouse.Button.left and self.enable:
+            if not(pressed):
+                self.leftArray.append([ x, y ])
+                print(self.leftArray)
+                if(len(self.leftArray) % 2 == 0):
+                    self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
 
-        if button == mouse.Button.left:
-            if not(pressed) and self.leftArray != []:
-                return False
-
+    enable = False
     def on_press(self, key):
+        # if we press ctrl + " then enable the mousiness
+        if key == keyboard.KeyCode.from_vk(192, _scan=41):
+            if self.enable:
+                self.enable = False
+            else:
+                self.enable = True
+            print(self.enable)
+
         if key == keyboard.Key.esc:
             return False
 
@@ -75,15 +80,10 @@ for f in filelist:
     os.remove(f)
 
 s = stuff()
-with mouse.Listener(
-        on_click=s.on_click,
-        ) as listener:
-    listener.join()
 
-with keyboard.Listener(
-        on_press=s.on_press,
-) as listener:
-    listener.join()
+with mouse.Listener(on_click=s.on_click) as listener:
+    with keyboard.Listener(on_press=s.on_press) as listener:
+        listener.join()
 
 ###################### DO STUFF ##################### 
 
