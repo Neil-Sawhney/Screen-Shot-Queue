@@ -8,10 +8,10 @@ import win32clipboard
 import os
 
 class stuff(object):
+    presses = set()
     imgNum = 0
-
     leftArray = []
-    sleepTime = 0.2
+    sleepTime = 0.4
 
 
     def send_to_clipboard(self, imgNum):
@@ -35,43 +35,46 @@ class stuff(object):
         print("im" + str(self.imgNum) + " saved")
         self.imgNum += 1
 
-    def on_click(self, x, y, button, pressed):
-        # if left click, add coordinates to array
-        if button == mouse.Button.right:
-            if not(pressed):
-                #pop the last element in leftArray
-                try:
-
-                    if(len(self.leftArray) % 2 == 0):
-                        self.leftArray.pop()
-                        self.leftArray.pop()
-                        print("im" + str(self.imgNum) + " removed")
-                        self.imgNum -= 1
-                    else:
-                        self.leftArray.pop()
-
-                except IndexError:
-                    print("No more elements in array")
-                print(self.leftArray)
-        if button == mouse.Button.left and self.enable:
-            if not(pressed):
-                self.leftArray.append([ x, y ])
-                print(self.leftArray)
-                if(len(self.leftArray) % 2 == 0):
-                    self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
-
-    enable = False
+    def on_move(self, x, y):
+        self.x = x
+        self.y = y
+        
     def on_press(self, key):
-        # if we press ctrl + " then enable the mousiness
-        if key == keyboard.KeyCode.from_vk(192, _scan=41):
-            if self.enable:
-                self.enable = False
-            else:
-                self.enable = True
-            print(self.enable)
+
+        self.presses.add(key)
+
+        # if we press ctrl + right then add a point
+        if self.presses ==  {keyboard.Key.ctrl_l, keyboard.Key.right}:
+            self.leftArray.append([ self.x, self.y ])
+            print(self.leftArray)
+            if(len(self.leftArray) % 2 == 0):
+                self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
+
+        # if we press ctrl + left then remove a point/img
+        if self.presses == {keyboard.Key.ctrl_r, keyboard.Key.left}:
+            #pop the last element in leftArray
+            try:
+
+                if(len(self.leftArray) % 2 == 0):
+                    self.leftArray.pop()
+                    self.leftArray.pop()
+                    print("im" + str(self.imgNum) + " removed")
+                    self.imgNum -= 1
+                else:
+                    self.leftArray.pop()
+
+            except IndexError:
+                print("No more elements in array")
+            print(self.leftArray)
 
         if key == keyboard.Key.esc:
             return False
+
+    def on_release(self, key):
+        try:
+            self.presses.remove(key)
+        except KeyError:
+            pass
 
 #remove all images
 dir = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images"
@@ -81,8 +84,8 @@ for f in filelist:
 
 s = stuff()
 
-with mouse.Listener(on_click=s.on_click) as listener:
-    with keyboard.Listener(on_press=s.on_press) as listener:
+with mouse.Listener(on_move=s.on_move) as listener:
+    with keyboard.Listener(on_press=s.on_press, on_release=s.on_release) as listener:
         listener.join()
 
 ###################### DO STUFF ##################### 
