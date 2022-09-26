@@ -1,7 +1,6 @@
-use the left mouse to mark top left, then top right corners
+put the mouse in the top left, press alt 2
+put the mouse in the bottom right, press alt 2
 
-use right click to redo the first point, or remove the last two points if you're on the second point
+to delete a point/ remove an image, press alt 1
 
-when you're done, press escape to paste all the pictures
-
-note: you can enable and disable the left click detection with ctrl + `
+press esc to print everything

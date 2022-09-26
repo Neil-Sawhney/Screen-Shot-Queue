@@ -11,8 +11,7 @@ class stuff(object):
     presses = set()
     imgNum = 0
     leftArray = []
-    sleepTime = 0.4
-
+    sleepTime = 0.3
 
     def send_to_clipboard(self, imgNum):
         image = Image.open("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im" + str(imgNum) + ".png")
@@ -20,9 +19,23 @@ class stuff(object):
         image.convert("RGB").save(output, "BMP")
         data = output.getvalue()[14:]
         output.close()
-        win32clipboard.OpenClipboard()
+        while(True):
+            try:
+                win32clipboard.OpenClipboard()
+                break;
+            except:
+                pass
+        
         win32clipboard.EmptyClipboard()
         win32clipboard.SetClipboardData(win32clipboard.CF_DIB, data)
+        while(True):
+            try:
+                if(win32clipboard.GetClipboardData(win32clipboard.CF_DIB)[:-1] == data):
+                    break;
+                win32clipboard.SetClipboardData(win32clipboard.CF_DIB, data)
+            except Exception as e:
+                pass
+
         win32clipboard.CloseClipboard()
  
     def grab(self, x1y1, x2y2):
@@ -41,35 +54,39 @@ class stuff(object):
         
     def on_press(self, key):
 
-        self.presses.add(key)
+        COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('2') }
 
-        # if we press ctrl + right then add a point
-        if self.presses ==  {keyboard.Key.ctrl_l, keyboard.Key.right}:
-            self.leftArray.append([ self.x, self.y ])
-            print(self.leftArray)
-            if(len(self.leftArray) % 2 == 0):
-                self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
-
-        # if we press ctrl + left then remove a point/img
-        if self.presses == {keyboard.Key.ctrl_r, keyboard.Key.left}:
-            #pop the last element in leftArray
-            try:
-
+        # if we press alt + 2 then add a point
+        if key in COMBINATION:
+            self.presses.add(key)
+            if all (k in self.presses for k in COMBINATION):
+                self.leftArray.append([ self.x, self.y ])
+                print(self.leftArray)
                 if(len(self.leftArray) % 2 == 0):
-                    self.leftArray.pop()
-                    self.leftArray.pop()
-                    print("im" + str(self.imgNum) + " removed")
-                    self.imgNum -= 1
-                else:
-                    self.leftArray.pop()
+                    self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
 
-            except IndexError:
-                print("No more elements in array")
-            print(self.leftArray)
+        # if we press alt + 1 then remove a point/img
+        COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('1') }
+        if key in COMBINATION:
+            self.presses.add(key)
+            if all (k in self.presses for k in COMBINATION):
+                #pop the last element in leftArray
+                try:
+                    if(len(self.leftArray) % 2 == 0):
+                        self.leftArray.pop()
+                        self.leftArray.pop()
+                        print("im" + str(self.imgNum) + " removed")
+                        self.imgNum -= 1
+                    else:
+                        self.leftArray.pop()
+
+                except IndexError:
+                    print("No more elements in array")
+                print(self.leftArray)
 
         if key == keyboard.Key.esc:
             return False
-
+        
     def on_release(self, key):
         try:
             self.presses.remove(key)
@@ -90,13 +107,14 @@ with mouse.Listener(on_move=s.on_move) as listener:
 
 ###################### DO STUFF ##################### 
 
-for i in range(s.imgNum):
-    s.send_to_clipboard(i)
 
+for i in range(s.imgNum):
     time.sleep(s.sleepTime)
+    s.send_to_clipboard(i)
+    time.sleep(s.sleepTime)
+
     #press ctrl v
     keyboard.Controller().press(keyboard.Key.ctrl)
     keyboard.Controller().press('v')
     keyboard.Controller().release(keyboard.Key.ctrl)
     keyboard.Controller().release('v')
-    time.sleep(s.sleepTime)
