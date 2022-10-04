@@ -53,8 +53,8 @@
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\screenShotQueue.py',
    'PYSOURCE'),
-  ('python310.dll', 'N:\\Python310\\python310.dll', 'BINARY'),
   ('VCRUNTIME140.dll', 'N:\\Python310\\VCRUNTIME140.dll', 'BINARY'),
+  ('python310.dll', 'N:\\Python310\\python310.dll', 'BINARY'),
   ('select', 'N:\\Python310\\DLLs\\select.pyd', 'EXTENSION'),
   ('_decimal', 'N:\\Python310\\DLLs\\_decimal.pyd', 'EXTENSION'),
   ('_hashlib', 'N:\\Python310\\DLLs\\_hashlib.pyd', 'EXTENSION'),
@@ -103,7 +103,7 @@
  [],
  False,
  False,
- 1664904780,
+ 1664905167,
  [('run.exe',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\.venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',

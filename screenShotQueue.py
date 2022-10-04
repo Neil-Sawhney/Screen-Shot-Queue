@@ -73,15 +73,12 @@ class stuff(object):
                 #pop the last element in leftArray
                 try:
                     if(len(self.leftArray) % 2 == 0):
-                        self.leftArray.pop()
-                        self.leftArray.pop()
                         print("im" + str(self.imgNum) + " removed")
                         self.imgNum -= 1
-                    else:
-                        self.leftArray.pop()
 
                 except IndexError:
                     print("No more elements in array")
+                self.leftArray.pop()
                 print(self.leftArray)
 
         # if we press alt + 3 then print and exit
@@ -105,13 +102,17 @@ for f in filelist:
 
 s = stuff()
 
+# Print instructions
+print("Press alt + 1 to remove a point")
+print("Press alt + 2 to add a point")
+print("Press alt + 3 to paste all and exit")
+
+
 with mouse.Listener(on_move=s.on_move) as listener:
     with keyboard.Listener(on_press=s.on_press, on_release=s.on_release) as listener:
         listener.join()
 
 ###################### DO STUFF ##################### 
-
-
 for i in range(s.imgNum):
     time.sleep(s.sleepTime)
     s.send_to_clipboard(i)
