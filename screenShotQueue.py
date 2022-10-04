@@ -1,4 +1,6 @@
 import time
+import tkinter
+from tkinter import ttk
 from pynput import mouse, keyboard
 from PIL import Image
 import mss
@@ -94,6 +96,7 @@ class stuff(object):
         except KeyError:
             pass
 
+
 #remove all images
 dir = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images"
 filelist = glob.glob(os.path.join(dir, "*.png"))
@@ -113,16 +116,46 @@ with mouse.Listener(on_move=s.on_move) as listener:
         listener.join()
 
 ###################### DO STUFF ##################### 
-for i in range(s.imgNum):
-    time.sleep(s.sleepTime)
-    s.send_to_clipboard(i)
-    time.sleep(s.sleepTime)
+def pasteAll():
+    for i in range(s.imgNum):
+        time.sleep(s.sleepTime)
+        s.send_to_clipboard(i)
+        time.sleep(s.sleepTime)
 
-    #press ctrl v
-    keyboard.Controller().press(keyboard.Key.ctrl)
-    keyboard.Controller().press('v')
-    keyboard.Controller().release(keyboard.Key.ctrl)
-    keyboard.Controller().release('v')
+        #press ctrl v
+        keyboard.Controller().press(keyboard.Key.ctrl)
+        keyboard.Controller().press('v')
+        keyboard.Controller().release(keyboard.Key.ctrl)
+        keyboard.Controller().release('v')
+
+
+# ask the user if they want to paste all images or just open the folder
+
+popup = tkinter.Tk()
+
+# make the popup appear on top of everything
+popup.wm_attributes("-topmost", 1)
+
+# resize 
+popup.geometry("300x150")
+
+# make the popup not resizable
+popup.resizable(0,0)
+
+# make the popup the active window
+popup.focus_force()
+
+Label = ttk.Label(popup, text="CHOOSE NOW")
+Label.pack()
+B1 = ttk.Button(popup, text="Paste All", command = lambda: [pasteAll(), popup.destroy()])
+B2 = ttk.Button(popup, text="Just Open Image Folder", command = popup.destroy)
+
+# make B1 the default button
+popup.bind('<Return>', lambda event: [pasteAll(), popup.destroy()])
+B1.pack()
+B2.pack()
+popup.mainloop()
+
 
 # Open the folder with the images
 os.startfile("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images")
