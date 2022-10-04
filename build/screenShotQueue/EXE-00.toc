@@ -88,13 +88,13 @@
    'Queue\\.venv\\Lib\\site-packages\\pywin32_system32\\pywintypes310.dll',
    'BINARY'),
   ('libffi-7.dll', 'N:\\Python310\\DLLs\\libffi-7.dll', 'BINARY'),
-  ('MSVCP140.dll',
-   'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\MSVCP140.dll',
-   'BINARY'),
   ('VCRUNTIME140_1.dll',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\.venv\\lib\\site-packages\\PIL\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('MSVCP140.dll',
+   'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
+   'Queue\\.venv\\lib\\site-packages\\PIL\\MSVCP140.dll',
    'BINARY'),
   ('base_library.zip',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
@@ -103,7 +103,7 @@
  [],
  False,
  False,
- 1664162333,
+ 1664904780,
  [('run.exe',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\.venv\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',

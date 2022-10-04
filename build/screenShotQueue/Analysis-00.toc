@@ -151,6 +151,7 @@
   ('opcode', 'N:\\Python310\\lib\\opcode.py', 'PYMODULE'),
   ('ast', 'N:\\Python310\\lib\\ast.py', 'PYMODULE'),
   ('tracemalloc', 'N:\\Python310\\lib\\tracemalloc.py', 'PYMODULE'),
+  ('stringprep', 'N:\\Python310\\lib\\stringprep.py', 'PYMODULE'),
   ('tempfile', 'N:\\Python310\\lib\\tempfile.py', 'PYMODULE'),
   ('getpass', 'N:\\Python310\\lib\\getpass.py', 'PYMODULE'),
   ('nturl2path', 'N:\\Python310\\lib\\nturl2path.py', 'PYMODULE'),
@@ -162,7 +163,6 @@
   ('http', 'N:\\Python310\\lib\\http\\__init__.py', 'PYMODULE'),
   ('ssl', 'N:\\Python310\\lib\\ssl.py', 'PYMODULE'),
   ('http.client', 'N:\\Python310\\lib\\http\\client.py', 'PYMODULE'),
-  ('stringprep', 'N:\\Python310\\lib\\stringprep.py', 'PYMODULE'),
   ('_py_abc', 'N:\\Python310\\lib\\_py_abc.py', 'PYMODULE'),
   ('glob', 'N:\\Python310\\lib\\glob.py', 'PYMODULE'),
   ('mss',
@@ -641,13 +641,13 @@
    'Queue\\.venv\\Lib\\site-packages\\pywin32_system32\\pywintypes310.dll',
    'BINARY'),
   ('libffi-7.dll', 'N:\\Python310\\DLLs\\libffi-7.dll', 'BINARY'),
-  ('MSVCP140.dll',
-   'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\MSVCP140.dll',
-   'BINARY'),
   ('VCRUNTIME140_1.dll',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\.venv\\lib\\site-packages\\PIL\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('MSVCP140.dll',
+   'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
+   'Queue\\.venv\\lib\\site-packages\\PIL\\MSVCP140.dll',
    'BINARY')],
  [],
  [],

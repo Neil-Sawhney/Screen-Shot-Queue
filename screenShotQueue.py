@@ -11,7 +11,7 @@ class stuff(object):
     presses = set()
     imgNum = 0
     leftArray = []
-    sleepTime = 0.3
+    sleepTime = 0.4
 
     def send_to_clipboard(self, imgNum):
         image = Image.open("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im" + str(imgNum) + ".png")
@@ -84,8 +84,12 @@ class stuff(object):
                     print("No more elements in array")
                 print(self.leftArray)
 
-        if key == keyboard.Key.esc:
-            return False
+        # if we press alt + 3 then print and exit
+        COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('3') }
+        if key in COMBINATION:
+            self.presses.add(key)
+            if all (k in self.presses for k in COMBINATION):
+                return False
         
     def on_release(self, key):
         try:
@@ -118,3 +122,6 @@ for i in range(s.imgNum):
     keyboard.Controller().press('v')
     keyboard.Controller().release(keyboard.Key.ctrl)
     keyboard.Controller().release('v')
+
+# Open the folder with the images
+os.startfile("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images")
