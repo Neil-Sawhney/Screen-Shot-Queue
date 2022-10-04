@@ -116,6 +116,7 @@
   ('dis', 'N:\\Python310\\lib\\dis.py', 'PYMODULE'),
   ('opcode', 'N:\\Python310\\lib\\opcode.py', 'PYMODULE'),
   ('ast', 'N:\\Python310\\lib\\ast.py', 'PYMODULE'),
+  ('stringprep', 'N:\\Python310\\lib\\stringprep.py', 'PYMODULE'),
   ('tracemalloc', 'N:\\Python310\\lib\\tracemalloc.py', 'PYMODULE'),
   ('_py_abc', 'N:\\Python310\\lib\\_py_abc.py', 'PYMODULE'),
   ('tempfile', 'N:\\Python310\\lib\\tempfile.py', 'PYMODULE'),
@@ -129,7 +130,6 @@
   ('http', 'N:\\Python310\\lib\\http\\__init__.py', 'PYMODULE'),
   ('ssl', 'N:\\Python310\\lib\\ssl.py', 'PYMODULE'),
   ('http.client', 'N:\\Python310\\lib\\http\\client.py', 'PYMODULE'),
-  ('stringprep', 'N:\\Python310\\lib\\stringprep.py', 'PYMODULE'),
   ('glob', 'N:\\Python310\\lib\\glob.py', 'PYMODULE'),
   ('mss',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
@@ -571,4 +571,9 @@
   ('pynput._info',
    'C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
    'Queue\\.venv\\lib\\site-packages\\pynput\\_info.py',
+   'PYMODULE'),
+  ('tkinter.ttk', 'N:\\Python310\\lib\\tkinter\\ttk.py', 'PYMODULE'),
+  ('tkinter', 'N:\\Python310\\lib\\tkinter\\__init__.py', 'PYMODULE'),
+  ('tkinter.constants',
+   'N:\\Python310\\lib\\tkinter\\constants.py',
    'PYMODULE')])
