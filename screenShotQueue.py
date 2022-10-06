@@ -8,6 +8,7 @@ import glob
 from io import BytesIO
 import win32clipboard
 import os
+import sys
 
 class stuff(object):
     presses = set()
@@ -16,7 +17,7 @@ class stuff(object):
     sleepTime = 0.4
 
     def send_to_clipboard(self, imgNum):
-        image = Image.open("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im" + str(imgNum) + ".png")
+        image = Image.open(".\\images\\im" + str(imgNum) + ".png")
         output = BytesIO()
         image.convert("RGB").save(output, "BMP")
         data = output.getvalue()[14:]
@@ -43,7 +44,7 @@ class stuff(object):
     def grab(self, x1y1, x2y2):
         with mss.mss() as sct:
             monitor = {"top": x1y1[1], "left": x1y1[0], "width": x2y2[0] - x1y1[0], "height": x2y2[1] - x1y1[1]}
-            output = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images\\im" + str(self.imgNum) + ".png"
+            output = ".\\images\\im" + str(self.imgNum) + ".png"
 
             sct_img = sct.grab(monitor)
             mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
@@ -98,7 +99,7 @@ class stuff(object):
 
 
 #remove all images
-dir = "C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images"
+dir = ".\\images"
 filelist = glob.glob(os.path.join(dir, "*.png"))
 for f in filelist:
     os.remove(f)
@@ -147,15 +148,13 @@ popup.focus_force()
 
 Label = ttk.Label(popup, text="CHOOSE NOW")
 Label.pack()
-B1 = ttk.Button(popup, text="Paste All", command = lambda: [pasteAll(), popup.destroy()])
-B2 = ttk.Button(popup, text="Just Open Image Folder", command = popup.destroy)
+B1 = ttk.Button(popup, text="Dont Paste", command = lambda: [popup.destroy, os.startfile(".\\images"), sys.exit()])
 
 # make B1 the default button
-popup.bind('<Return>', lambda event: [pasteAll(), popup.destroy()])
 B1.pack()
-B2.pack()
 popup.mainloop()
 
 
 # Open the folder with the images
-os.startfile("C:\\Users\\neils\\OneDrive\\Documents\\Programming\\bots\\Screen Shot Queue\\images")
+pasteAll()
+os.startfile(".\\images")
