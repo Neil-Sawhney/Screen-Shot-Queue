@@ -12,6 +12,7 @@ import os
 import sys
 import shutil
 import nbformat as nbf
+import re
 
 class stuff(object):
     presses = set()
@@ -45,14 +46,17 @@ class stuff(object):
         win32clipboard.CloseClipboard()
  
     def grab(self, x1y1, x2y2):
-        with mss.mss() as sct:
-            monitor = {"top": x1y1[1], "left": x1y1[0], "width": x2y2[0] - x1y1[0], "height": x2y2[1] - x1y1[1]}
-            output = ".\\images\\im" + str(self.imgNum) + ".png"
+        try:
+            with mss.mss() as sct:
+                monitor = {"top": x1y1[1], "left": x1y1[0], "width": x2y2[0] - x1y1[0], "height": x2y2[1] - x1y1[1]}
+                output = ".\\images\\im" + str(self.imgNum) + ".png"
 
-            sct_img = sct.grab(monitor)
-            mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
-        print("im" + str(self.imgNum + 1) + " saved")
-        self.imgNum += 1
+                sct_img = sct.grab(monitor)
+                mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
+            print("im" + str(self.imgNum + 1) + " saved")
+            self.imgNum += 1
+        except Exception as e:
+            return False
 
     def on_move(self, x, y):
         self.x = x
@@ -63,42 +67,67 @@ class stuff(object):
         COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('2') }
 
         # if we press alt + 2 then add a point
-        if key in COMBINATION:
+        if key in COMBINATION and len(self.presses) < 2:
             self.presses.add(key)
             if all (k in self.presses for k in COMBINATION):
                 # if this is the first point then delete all images
                 if(len(self.leftArray) == 0):
                     self.removeImages()
+
                 self.leftArray.append([ self.x, self.y ])
-                print(self.leftArray)
-                if(len(self.leftArray) % 2 == 0):
-                    # if the second point is not down and to the right of the first point then flip them
-                    if(self.leftArray[-2][0] > self.leftArray[-1][0] or self.leftArray[-2][1] > self.leftArray[-1][1]):
-                        self.leftArray[-2], self.leftArray[-1] = self.leftArray[-1], self.leftArray[-2]
-                    self.grab(self.leftArray[-2], self.leftArray[-1])
+
+                if (len(self.leftArray) % 2 != 0):
+                    print("\nstart point recorded")
+                else:
+                    print("end point recorded")
+
+                    firstPointX = self.leftArray[-2][0]
+                    secondPointX = self.leftArray[-1][0]
+                    firstPointY = self.leftArray[-2][1]
+                    secondPointY = self.leftArray[-1][1]
+
+                    # if the second point is up and left, swap the points
+                    if (secondPointY < firstPointY and secondPointX < firstPointX):
+                        self.leftArray[-2][0] = secondPointX
+                        self.leftArray[-2][1] = secondPointY
+                        self.leftArray[-1][0] = firstPointX
+                        self.leftArray[-1][1] = firstPointY
+                    # if the second point is up and right, swap the y values
+                    elif ( secondPointY < firstPointY and secondPointX > firstPointX):
+                        self.leftArray[-2][1] = secondPointY
+                        self.leftArray[-1][1] = firstPointY
+                    # if the second point is down and left, swap the x values
+                    elif (secondPointY > firstPointY and secondPointX < firstPointX):
+                        self.leftArray[-2][0] = secondPointX
+                        self.leftArray[-1][0] = firstPointX
+
+                    # if the grab fails, give up
+                    if (self.grab(self.leftArray[-2], self.leftArray[-1])) == False:
+                        print("An unknown error occured, whoops")
+                        return False
 
         # if we press alt + 1 then remove a point/img
         COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('1') }
-        if key in COMBINATION:
+        if key in COMBINATION and len(self.presses) < 2:
             self.presses.add(key)
             if all (k in self.presses for k in COMBINATION):
                 if(len(self.leftArray) == 0):
-                    print("no points to remove")
+                    print("\nno points to remove")
                     return
-                #pop the last element in leftArray
-                try:
-                    if(len(self.leftArray) % 2 == 0):
-                        print("im" + str(self.imgNum) + " removed")
-                        self.imgNum -= 1
 
-                except IndexError:
-                    print("No more elements in array")
+                #pop the last element in leftArray
                 self.leftArray.pop()
-                print(self.leftArray)
+                if (len(self.leftArray) % 2 != 0):
+                    self.removeLastImage() 
+
+                    print("\nend point removed")
+                    print("im" + str(self.imgNum + 1) + " removed")
+                else:
+                    print("start point removed")
 
         # if we press alt + 3 then print and exit
         COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('3') }
-        if key in COMBINATION:
+        if key in COMBINATION and len(self.presses) < 2:
             self.presses.add(key)
             if all (k in self.presses for k in COMBINATION):
                 return False
@@ -115,6 +144,12 @@ class stuff(object):
         filelist = glob.glob(os.path.join(dir, "*.png"))
         for f in filelist:
             os.remove(f)
+
+    def removeLastImage(self):
+        self.imgNum -= 1
+        dir = ".\\images"
+        filelist = glob.glob(os.path.join(dir, "*.png"))
+        os.remove(filelist[-1])
 
 
 s = stuff()
@@ -169,27 +204,33 @@ def jupyterNotebook():
     os.startfile(directory + "\\jupyterNotebook.ipynb")
 
 def createPdf():
-    images = [
-        Image.open(".\\images\\im" + str(i) + ".png") for i in range(s.imgNum + 1)
-    ]
-
     # ask for directory
     root = tkinter.Tk()
     root.withdraw()
     pdf_path = filedialog.askdirectory()
     root.destroy()
 
-    # save the images to a pdf
-    images[0].save(pdf_path + "\\NeilSawhney.pdf", save_all=True, append_images=images[1:])
+    # copy all images in .\images to the new directory
+    files = os.listdir(".\\images")
+    for f in files:
+        shutil.copy(".\\images\\" + f, pdf_path + "\\images\\" + f)
+
+    # get the images from the images folder
+    files = os.listdir(".\\images")
+    # sort the images by name
+    files.sort(key=lambda f: int(re.sub('\D', '', f)))
+    
+    # create a new pdf using PIL
+    im1 = Image.open(".\\images\\" + files[0])
+    im1.save(pdf_path + "\\output.pdf", "PDF" ,resolution=100.0, save_all=True, append_images=[Image.open(".\\images\\" + f) for f in files[1:]])
+
+    os.startfile(pdf_path)
+    os.startfile(pdf_path + "\\output.pdf")
 
 # ask the user if they want to paste all images or just open the folder
 popup = tkinter.Tk()
 # make the popup appear on top of everything
 popup.wm_attributes("-topmost", 1)
-# resize 
-popup.geometry("300x150")
-# make the popup not resizable
-popup.resizable(0,0)
 # make the popup the active window
 popup.focus_force()
 
