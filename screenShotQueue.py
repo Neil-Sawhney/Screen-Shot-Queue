@@ -66,16 +66,25 @@ class stuff(object):
         if key in COMBINATION:
             self.presses.add(key)
             if all (k in self.presses for k in COMBINATION):
+                # if this is the first point then delete all images
+                if(len(self.leftArray) == 0):
+                    self.removeImages()
                 self.leftArray.append([ self.x, self.y ])
                 print(self.leftArray)
                 if(len(self.leftArray) % 2 == 0):
-                    self.grab(self.leftArray[2*self.imgNum], self.leftArray[2*self.imgNum + 1])
+                    # if the second point is not down and to the right of the first point then flip them
+                    if(self.leftArray[-2][0] > self.leftArray[-1][0] or self.leftArray[-2][1] > self.leftArray[-1][1]):
+                        self.leftArray[-2], self.leftArray[-1] = self.leftArray[-1], self.leftArray[-2]
+                    self.grab(self.leftArray[-2], self.leftArray[-1])
 
         # if we press alt + 1 then remove a point/img
         COMBINATION = { keyboard.Key.alt_l, keyboard.KeyCode.from_char('1') }
         if key in COMBINATION:
             self.presses.add(key)
             if all (k in self.presses for k in COMBINATION):
+                if(len(self.leftArray) == 0):
+                    print("no points to remove")
+                    return
                 #pop the last element in leftArray
                 try:
                     if(len(self.leftArray) % 2 == 0):
@@ -100,12 +109,13 @@ class stuff(object):
         except KeyError:
             pass
 
+    #remove all images
+    def removeImages(self):
+        dir = ".\\images"
+        filelist = glob.glob(os.path.join(dir, "*.png"))
+        for f in filelist:
+            os.remove(f)
 
-#remove all images
-dir = ".\\images"
-filelist = glob.glob(os.path.join(dir, "*.png"))
-for f in filelist:
-    os.remove(f)
 
 s = stuff()
 
@@ -158,7 +168,19 @@ def jupyterNotebook():
     nbf.write(nb, directory + "\\jupyterNotebook.ipynb")
     os.startfile(directory + "\\jupyterNotebook.ipynb")
 
+def createPdf():
+    images = [
+        Image.open(".\\images\\im" + str(i) + ".png") for i in range(s.imgNum + 1)
+    ]
 
+    # ask for directory
+    root = tkinter.Tk()
+    root.withdraw()
+    pdf_path = filedialog.askdirectory()
+    root.destroy()
+
+    # save the images to a pdf
+    images[0].save(pdf_path + "\\NeilSawhney.pdf", save_all=True, append_images=images[1:])
 
 # ask the user if they want to paste all images or just open the folder
 popup = tkinter.Tk()
@@ -178,11 +200,13 @@ B2 = ttk.Button(popup, text="Paste Normally", command = lambda: [popup.destroy, 
 B3 = ttk.Button(popup, text="Paste with Enter", command = lambda: [popup.destroy, pasteAll(1), os.startfile(".\\images"), sys.exit()])
 B4 = ttk.Button(popup, text="Paste with double Enter", command = lambda: [popup.destroy, pasteAll(2), os.startfile(".\\images"), sys.exit()])
 B5 = ttk.Button(popup, text="Jupyter Notebook", command = lambda: [popup.destroy, jupyterNotebook(), sys.exit()])
+B6 = ttk.Button(popup, text="Create PDF", command = lambda: [popup.destroy, createPdf(), sys.exit()])
 B1.pack()
 B2.pack()
 B3.pack()
 B4.pack()
 B5.pack()
+B6.pack()
 
 popup.mainloop()
 

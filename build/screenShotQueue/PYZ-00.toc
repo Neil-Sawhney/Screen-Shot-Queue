@@ -1,562 +1,1259 @@
-('N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
+('D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
  'Queue\\build\\screenShotQueue\\PYZ-00.pyz',
- [('subprocess', 'N:\\Python39\\lib\\subprocess.py', 'PYMODULE'),
-  ('selectors', 'N:\\Python39\\lib\\selectors.py', 'PYMODULE'),
-  ('contextlib', 'N:\\Python39\\lib\\contextlib.py', 'PYMODULE'),
-  ('threading', 'N:\\Python39\\lib\\threading.py', 'PYMODULE'),
-  ('_threading_local', 'N:\\Python39\\lib\\_threading_local.py', 'PYMODULE'),
-  ('signal', 'N:\\Python39\\lib\\signal.py', 'PYMODULE'),
-  ('copy', 'N:\\Python39\\lib\\copy.py', 'PYMODULE'),
-  ('tempfile', 'N:\\Python39\\lib\\tempfile.py', 'PYMODULE'),
-  ('random', 'N:\\Python39\\lib\\random.py', 'PYMODULE'),
-  ('statistics', 'N:\\Python39\\lib\\statistics.py', 'PYMODULE'),
-  ('decimal', 'N:\\Python39\\lib\\decimal.py', 'PYMODULE'),
-  ('_pydecimal', 'N:\\Python39\\lib\\_pydecimal.py', 'PYMODULE'),
-  ('contextvars', 'N:\\Python39\\lib\\contextvars.py', 'PYMODULE'),
-  ('fractions', 'N:\\Python39\\lib\\fractions.py', 'PYMODULE'),
-  ('numbers', 'N:\\Python39\\lib\\numbers.py', 'PYMODULE'),
-  ('hashlib', 'N:\\Python39\\lib\\hashlib.py', 'PYMODULE'),
-  ('logging', 'N:\\Python39\\lib\\logging\\__init__.py', 'PYMODULE'),
-  ('pickle', 'N:\\Python39\\lib\\pickle.py', 'PYMODULE'),
-  ('pprint', 'N:\\Python39\\lib\\pprint.py', 'PYMODULE'),
-  ('_compat_pickle', 'N:\\Python39\\lib\\_compat_pickle.py', 'PYMODULE'),
-  ('struct', 'N:\\Python39\\lib\\struct.py', 'PYMODULE'),
-  ('string', 'N:\\Python39\\lib\\string.py', 'PYMODULE'),
-  ('bisect', 'N:\\Python39\\lib\\bisect.py', 'PYMODULE'),
-  ('shutil', 'N:\\Python39\\lib\\shutil.py', 'PYMODULE'),
-  ('zipfile', 'N:\\Python39\\lib\\zipfile.py', 'PYMODULE'),
-  ('argparse', 'N:\\Python39\\lib\\argparse.py', 'PYMODULE'),
-  ('textwrap', 'N:\\Python39\\lib\\textwrap.py', 'PYMODULE'),
-  ('gettext', 'N:\\Python39\\lib\\gettext.py', 'PYMODULE'),
-  ('py_compile', 'N:\\Python39\\lib\\py_compile.py', 'PYMODULE'),
-  ('importlib.machinery',
-   'N:\\Python39\\lib\\importlib\\machinery.py',
+ [('traitlets.traitlets',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\traitlets.py',
    'PYMODULE'),
-  ('importlib', 'N:\\Python39\\lib\\importlib\\__init__.py', 'PYMODULE'),
-  ('importlib._bootstrap',
-   'N:\\Python39\\lib\\importlib\\_bootstrap.py',
+  ('traitlets',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\__init__.py',
+   'PYMODULE'),
+  ('traitlets.utils.decorators',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\decorators.py',
+   'PYMODULE'),
+  ('traitlets.utils',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\__init__.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\copy.py',
+   'PYMODULE'),
+  ('traitlets._version',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\_version.py',
+   'PYMODULE'),
+  ('traitlets.utils.sentinel',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\sentinel.py',
+   'PYMODULE'),
+  ('traitlets.utils.importstring',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\importstring.py',
+   'PYMODULE'),
+  ('traitlets.utils.getargspec',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\getargspec.py',
+   'PYMODULE'),
+  ('traitlets.utils.descriptions',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\descriptions.py',
+   'PYMODULE'),
+  ('traitlets.utils.bunch',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\bunch.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ast.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\argparse.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\gettext.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\struct.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\typing.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\inspect.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\resources.py',
+   'PYMODULE'),
+  ('importlib._common',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\_common.py',
+   'PYMODULE'),
+  ('importlib._adapters',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\_adapters.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\random.py',
+   'PYMODULE'),
+  ('statistics',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\statistics.py',
+   'PYMODULE'),
+  ('decimal',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\decimal.py',
+   'PYMODULE'),
+  ('_pydecimal',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_pydecimal.py',
+   'PYMODULE'),
+  ('contextvars',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\contextvars.py',
+   'PYMODULE'),
+  ('fractions',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\fractions.py',
+   'PYMODULE'),
+  ('numbers',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\numbers.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\pickle.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\pprint.py',
+   'PYMODULE'),
+  ('dataclasses',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\dataclasses.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\threading.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\string.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\bisect.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib._abc',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\_abc.py',
    'PYMODULE'),
   ('importlib._bootstrap_external',
-   'N:\\Python39\\lib\\importlib\\_bootstrap_external.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\_bootstrap_external.py',
    'PYMODULE'),
   ('importlib.metadata',
-   'N:\\Python39\\lib\\importlib\\metadata.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\__init__.py',
    'PYMODULE'),
-  ('importlib.abc', 'N:\\Python39\\lib\\importlib\\abc.py', 'PYMODULE'),
-  ('typing', 'N:\\Python39\\lib\\typing.py', 'PYMODULE'),
-  ('configparser', 'N:\\Python39\\lib\\configparser.py', 'PYMODULE'),
-  ('email', 'N:\\Python39\\lib\\email\\__init__.py', 'PYMODULE'),
-  ('email.parser', 'N:\\Python39\\lib\\email\\parser.py', 'PYMODULE'),
-  ('email._policybase', 'N:\\Python39\\lib\\email\\_policybase.py', 'PYMODULE'),
-  ('email.utils', 'N:\\Python39\\lib\\email\\utils.py', 'PYMODULE'),
-  ('email._parseaddr', 'N:\\Python39\\lib\\email\\_parseaddr.py', 'PYMODULE'),
-  ('calendar', 'N:\\Python39\\lib\\calendar.py', 'PYMODULE'),
-  ('datetime', 'N:\\Python39\\lib\\datetime.py', 'PYMODULE'),
-  ('_strptime', 'N:\\Python39\\lib\\_strptime.py', 'PYMODULE'),
-  ('socket', 'N:\\Python39\\lib\\socket.py', 'PYMODULE'),
-  ('email.feedparser', 'N:\\Python39\\lib\\email\\feedparser.py', 'PYMODULE'),
-  ('email.message', 'N:\\Python39\\lib\\email\\message.py', 'PYMODULE'),
-  ('email.policy', 'N:\\Python39\\lib\\email\\policy.py', 'PYMODULE'),
+  ('importlib.metadata._itertools',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\_itertools.py',
+   'PYMODULE'),
+  ('importlib.metadata._functools',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\_functools.py',
+   'PYMODULE'),
+  ('importlib.metadata._collections',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\_collections.py',
+   'PYMODULE'),
+  ('importlib.metadata._meta',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\_meta.py',
+   'PYMODULE'),
+  ('importlib.metadata._adapters',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\_adapters.py',
+   'PYMODULE'),
+  ('importlib.metadata._text',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\metadata\\_text.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\policy.py',
+   'PYMODULE'),
   ('email.contentmanager',
-   'N:\\Python39\\lib\\email\\contentmanager.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\contentmanager.py',
    'PYMODULE'),
-  ('email.quoprimime', 'N:\\Python39\\lib\\email\\quoprimime.py', 'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
   ('email.headerregistry',
-   'N:\\Python39\\lib\\email\\headerregistry.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\headerregistry.py',
    'PYMODULE'),
-  ('email.iterators', 'N:\\Python39\\lib\\email\\iterators.py', 'PYMODULE'),
-  ('email.generator', 'N:\\Python39\\lib\\email\\generator.py', 'PYMODULE'),
-  ('email._encoded_words',
-   'N:\\Python39\\lib\\email\\_encoded_words.py',
-   'PYMODULE'),
-  ('base64', 'N:\\Python39\\lib\\base64.py', 'PYMODULE'),
-  ('getopt', 'N:\\Python39\\lib\\getopt.py', 'PYMODULE'),
-  ('quopri', 'N:\\Python39\\lib\\quopri.py', 'PYMODULE'),
-  ('uu', 'N:\\Python39\\lib\\uu.py', 'PYMODULE'),
-  ('optparse', 'N:\\Python39\\lib\\optparse.py', 'PYMODULE'),
   ('email._header_value_parser',
-   'N:\\Python39\\lib\\email\\_header_value_parser.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\_header_value_parser.py',
    'PYMODULE'),
-  ('email.header', 'N:\\Python39\\lib\\email\\header.py', 'PYMODULE'),
-  ('email.base64mime', 'N:\\Python39\\lib\\email\\base64mime.py', 'PYMODULE'),
-  ('email.charset', 'N:\\Python39\\lib\\email\\charset.py', 'PYMODULE'),
-  ('email.encoders', 'N:\\Python39\\lib\\email\\encoders.py', 'PYMODULE'),
-  ('email.errors', 'N:\\Python39\\lib\\email\\errors.py', 'PYMODULE'),
-  ('csv', 'N:\\Python39\\lib\\csv.py', 'PYMODULE'),
-  ('importlib.util', 'N:\\Python39\\lib\\importlib\\util.py', 'PYMODULE'),
-  ('tarfile', 'N:\\Python39\\lib\\tarfile.py', 'PYMODULE'),
-  ('gzip', 'N:\\Python39\\lib\\gzip.py', 'PYMODULE'),
-  ('_compression', 'N:\\Python39\\lib\\_compression.py', 'PYMODULE'),
-  ('lzma', 'N:\\Python39\\lib\\lzma.py', 'PYMODULE'),
-  ('bz2', 'N:\\Python39\\lib\\bz2.py', 'PYMODULE'),
-  ('getpass', 'N:\\Python39\\lib\\getpass.py', 'PYMODULE'),
-  ('nturl2path', 'N:\\Python39\\lib\\nturl2path.py', 'PYMODULE'),
-  ('ftplib', 'N:\\Python39\\lib\\ftplib.py', 'PYMODULE'),
-  ('netrc', 'N:\\Python39\\lib\\netrc.py', 'PYMODULE'),
-  ('shlex', 'N:\\Python39\\lib\\shlex.py', 'PYMODULE'),
-  ('mimetypes', 'N:\\Python39\\lib\\mimetypes.py', 'PYMODULE'),
-  ('http.cookiejar', 'N:\\Python39\\lib\\http\\cookiejar.py', 'PYMODULE'),
-  ('http', 'N:\\Python39\\lib\\http\\__init__.py', 'PYMODULE'),
-  ('ssl', 'N:\\Python39\\lib\\ssl.py', 'PYMODULE'),
-  ('http.client', 'N:\\Python39\\lib\\http\\client.py', 'PYMODULE'),
-  ('stringprep', 'N:\\Python39\\lib\\stringprep.py', 'PYMODULE'),
-  ('tracemalloc', 'N:\\Python39\\lib\\tracemalloc.py', 'PYMODULE'),
-  ('_py_abc', 'N:\\Python39\\lib\\_py_abc.py', 'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\base64.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\getopt.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\calendar.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\datetime.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socket.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\selectors.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\quopri.py',
+   'PYMODULE'),
+  ('uu',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\uu.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\optparse.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\lzma.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_compression.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\bz2.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('csv',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\csv.py',
+   'PYMODULE'),
+  ('importlib.readers',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\readers.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\dis.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\opcode.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\signal.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\netrc.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\shlex.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ssl.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('nbformat',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\__init__.py',
+   'PYMODULE'),
+  ('nbformat.notebooknode',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\notebooknode.py',
+   'PYMODULE'),
+  ('nbformat._struct',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\_struct.py',
+   'PYMODULE'),
+  ('nbformat.converter',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\converter.py',
+   'PYMODULE'),
+  ('nbformat.reader',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\reader.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('nbformat.sentinel',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\sentinel.py',
+   'PYMODULE'),
+  ('nbformat._version',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\_version.py',
+   'PYMODULE'),
+  ('nbformat.v4',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v4\\__init__.py',
+   'PYMODULE'),
+  ('nbformat.v4.convert',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v4\\convert.py',
+   'PYMODULE'),
+  ('nbformat.v4.nbjson',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v4\\nbjson.py',
+   'PYMODULE'),
+  ('nbformat.v4.rwbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v4\\rwbase.py',
+   'PYMODULE'),
+  ('nbformat.v4.nbbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v4\\nbbase.py',
+   'PYMODULE'),
+  ('nbformat.corpus.words',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\corpus\\words.py',
+   'PYMODULE'),
+  ('nbformat.corpus',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\corpus\\__init__.py',
+   'PYMODULE'),
+  ('uuid',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\uuid.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\platform.py',
+   'PYMODULE'),
+  ('nbformat.validator',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\validator.py',
+   'PYMODULE'),
+  ('nbformat.warnings',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\warnings.py',
+   'PYMODULE'),
+  ('nbformat.json_compat',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\json_compat.py',
+   'PYMODULE'),
+  ('jsonschema',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\__init__.py',
+   'PYMODULE'),
+  ('jsonschema.validators',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\validators.py',
+   'PYMODULE'),
+  ('attr',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\__init__.py',
+   'PYMODULE'),
+  ('attr._next_gen',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_next_gen.py',
+   'PYMODULE'),
+  ('attr._version_info',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_version_info.py',
+   'PYMODULE'),
+  ('attr._make',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_make.py',
+   'PYMODULE'),
+  ('attr._compat',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_compat.py',
+   'PYMODULE'),
+  ('attr._funcs',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_funcs.py',
+   'PYMODULE'),
+  ('attr._cmp',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_cmp.py',
+   'PYMODULE'),
+  ('attr.validators',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\validators.py',
+   'PYMODULE'),
+  ('attr.filters',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\filters.py',
+   'PYMODULE'),
+  ('attr.exceptions',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\exceptions.py',
+   'PYMODULE'),
+  ('attr.converters',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\converters.py',
+   'PYMODULE'),
+  ('attr.setters',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\setters.py',
+   'PYMODULE'),
+  ('attr._config',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\attr\\_config.py',
+   'PYMODULE'),
+  ('pyrsistent',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\__init__.py',
+   'PYMODULE'),
+  ('pyrsistent._toolz',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_toolz.py',
+   'PYMODULE'),
+  ('pyrsistent._transformations',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_transformations.py',
+   'PYMODULE'),
+  ('pyrsistent._helpers',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_helpers.py',
+   'PYMODULE'),
+  ('pyrsistent._immutable',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_immutable.py',
+   'PYMODULE'),
+  ('pyrsistent._pclass',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_pclass.py',
+   'PYMODULE'),
+  ('pyrsistent._precord',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_precord.py',
+   'PYMODULE'),
+  ('pyrsistent._field_common',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_field_common.py',
+   'PYMODULE'),
+  ('pyrsistent._checked_types',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_checked_types.py',
+   'PYMODULE'),
+  ('pyrsistent._pdeque',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_pdeque.py',
+   'PYMODULE'),
+  ('pyrsistent._plist',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_plist.py',
+   'PYMODULE'),
+  ('pyrsistent._pbag',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_pbag.py',
+   'PYMODULE'),
+  ('pyrsistent._pset',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_pset.py',
+   'PYMODULE'),
+  ('pyrsistent._pvector',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_pvector.py',
+   'PYMODULE'),
+  ('pyrsistent._pmap',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\_pmap.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\__future__.py',
+   'PYMODULE'),
+  ('jsonschema.protocols',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\protocols.py',
+   'PYMODULE'),
+  ('jsonschema._validators',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\_validators.py',
+   'PYMODULE'),
+  ('jsonschema._legacy_validators',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\_legacy_validators.py',
+   'PYMODULE'),
+  ('jsonschema.exceptions',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\exceptions.py',
+   'PYMODULE'),
+  ('jsonschema._types',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\_types.py',
+   'PYMODULE'),
+  ('pyrsistent.typing',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pyrsistent\\typing.py',
+   'PYMODULE'),
+  ('jsonschema._format',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\_format.py',
+   'PYMODULE'),
+  ('ipaddress',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ipaddress.py',
+   'PYMODULE'),
+  ('jsonschema._utils',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\jsonschema\\_utils.py',
+   'PYMODULE'),
+  ('fastjsonschema',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\__init__.py',
+   'PYMODULE'),
+  ('fastjsonschema.version',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\version.py',
+   'PYMODULE'),
+  ('fastjsonschema.ref_resolver',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\ref_resolver.py',
+   'PYMODULE'),
+  ('fastjsonschema.exceptions',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\exceptions.py',
+   'PYMODULE'),
+  ('fastjsonschema.draft07',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\draft07.py',
+   'PYMODULE'),
+  ('fastjsonschema.draft06',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\draft06.py',
+   'PYMODULE'),
+  ('fastjsonschema.generator',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\generator.py',
+   'PYMODULE'),
+  ('fastjsonschema.indent',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\indent.py',
+   'PYMODULE'),
+  ('fastjsonschema.draft04',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\fastjsonschema\\draft04.py',
+   'PYMODULE'),
+  ('nbformat._imports',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\_imports.py',
+   'PYMODULE'),
+  ('nbformat.v3',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v3\\__init__.py',
+   'PYMODULE'),
+  ('nbformat.v3.nbpy',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v3\\nbpy.py',
+   'PYMODULE'),
+  ('nbformat.v3.rwbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v3\\rwbase.py',
+   'PYMODULE'),
+  ('nbformat.v3.nbjson',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v3\\nbjson.py',
+   'PYMODULE'),
+  ('nbformat.v3.nbbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v3\\nbbase.py',
+   'PYMODULE'),
+  ('nbformat.v3.convert',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v3\\convert.py',
+   'PYMODULE'),
+  ('nbformat.v2',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\__init__.py',
+   'PYMODULE'),
+  ('nbformat.v2.nbxml',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\nbxml.py',
+   'PYMODULE'),
+  ('nbformat.v2.nbpy',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\nbpy.py',
+   'PYMODULE'),
+  ('nbformat.v2.rwbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\rwbase.py',
+   'PYMODULE'),
+  ('nbformat.v2.nbjson',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\nbjson.py',
+   'PYMODULE'),
+  ('nbformat.v2.nbbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\nbbase.py',
+   'PYMODULE'),
+  ('nbformat.v2.convert',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v2\\convert.py',
+   'PYMODULE'),
+  ('nbformat.v1',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v1\\__init__.py',
+   'PYMODULE'),
+  ('nbformat.v1.nbjson',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v1\\nbjson.py',
+   'PYMODULE'),
+  ('nbformat.v1.rwbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v1\\rwbase.py',
+   'PYMODULE'),
+  ('nbformat.v1.nbbase',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v1\\nbbase.py',
+   'PYMODULE'),
+  ('nbformat.v1.convert',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\nbformat\\v1\\convert.py',
+   'PYMODULE'),
+  ('traitlets.log',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\log.py',
+   'PYMODULE'),
+  ('traitlets.config',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\config\\__init__.py',
+   'PYMODULE'),
+  ('traitlets.config.loader',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\config\\loader.py',
+   'PYMODULE'),
+  ('traitlets.config.configurable',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\config\\configurable.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\difflib.py',
+   'PYMODULE'),
+  ('traitlets.utils.text',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\text.py',
+   'PYMODULE'),
+  ('traitlets.config.application',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\config\\application.py',
+   'PYMODULE'),
+  ('traitlets.utils.nested_update',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\traitlets\\utils\\nested_update.py',
+   'PYMODULE'),
+  ('logging.config',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\logging\\config.py',
+   'PYMODULE'),
+  ('configparser',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\configparser.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('logging.handlers',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\logging\\handlers.py',
+   'PYMODULE'),
+  ('win32evtlogutil',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\win32\\lib\\win32evtlogutil.py',
+   'PYMODULE'),
+  ('winerror',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\win32\\lib\\winerror.py',
+   'PYMODULE'),
+  ('win32con',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\win32\\lib\\win32con.py',
+   'PYMODULE'),
+  ('smtplib',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\smtplib.py',
+   'PYMODULE'),
+  ('hmac',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\hmac.py',
+   'PYMODULE'),
+  ('queue',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\queue.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\shutil.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\gzip.py',
+   'PYMODULE'),
   ('pywintypes',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\win32\\lib\\pywintypes.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\win32\\lib\\pywintypes.py',
    'PYMODULE'),
-  ('sysconfig', 'N:\\Python39\\lib\\sysconfig.py', 'PYMODULE'),
-  ('_aix_support', 'N:\\Python39\\lib\\_aix_support.py', 'PYMODULE'),
-  ('_bootsubprocess', 'N:\\Python39\\lib\\_bootsubprocess.py', 'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('_aix_support',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_aix_support.py',
+   'PYMODULE'),
+  ('_bootsubprocess',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\_bootsubprocess.py',
+   'PYMODULE'),
   ('site',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PyInstaller\\fake-modules\\site.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PyInstaller\\fake-modules\\site.py',
    'PYMODULE'),
-  ('glob', 'N:\\Python39\\lib\\glob.py', 'PYMODULE'),
+  ('glob',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\glob.py',
+   'PYMODULE'),
   ('mss',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\__init__.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\__init__.py',
    'PYMODULE'),
   ('mss.factory',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\factory.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\factory.py',
    'PYMODULE'),
   ('mss.base',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\base.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\base.py',
    'PYMODULE'),
   ('mss.models',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\models.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\models.py',
    'PYMODULE'),
   ('mss.tools',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\tools.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\tools.py',
    'PYMODULE'),
   ('mss.screenshot',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\screenshot.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\screenshot.py',
    'PYMODULE'),
-  ('platform', 'N:\\Python39\\lib\\platform.py', 'PYMODULE'),
   ('mss.windows',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\windows.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\windows.py',
    'PYMODULE'),
-  ('ctypes.wintypes', 'N:\\Python39\\lib\\ctypes\\wintypes.py', 'PYMODULE'),
-  ('ctypes', 'N:\\Python39\\lib\\ctypes\\__init__.py', 'PYMODULE'),
-  ('ctypes._endian', 'N:\\Python39\\lib\\ctypes\\_endian.py', 'PYMODULE'),
+  ('ctypes.wintypes',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\wintypes.py',
+   'PYMODULE'),
+  ('ctypes',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\__init__.py',
+   'PYMODULE'),
+  ('ctypes._endian',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\_endian.py',
+   'PYMODULE'),
   ('mss.linux',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\linux.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\linux.py',
    'PYMODULE'),
-  ('ctypes.util', 'N:\\Python39\\lib\\ctypes\\util.py', 'PYMODULE'),
-  ('ctypes._aix', 'N:\\Python39\\lib\\ctypes\\_aix.py', 'PYMODULE'),
+  ('ctypes.util',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\_aix.py',
+   'PYMODULE'),
   ('ctypes.macholib.dyld',
-   'N:\\Python39\\lib\\ctypes\\macholib\\dyld.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\macholib\\dyld.py',
    'PYMODULE'),
   ('ctypes.macholib',
-   'N:\\Python39\\lib\\ctypes\\macholib\\__init__.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\macholib\\__init__.py',
    'PYMODULE'),
   ('ctypes.macholib.dylib',
-   'N:\\Python39\\lib\\ctypes\\macholib\\dylib.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\macholib\\dylib.py',
    'PYMODULE'),
   ('ctypes.macholib.framework',
-   'N:\\Python39\\lib\\ctypes\\macholib\\framework.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\ctypes\\macholib\\framework.py',
    'PYMODULE'),
   ('mss.darwin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\darwin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\darwin.py',
    'PYMODULE'),
   ('mss.exception',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\mss\\exception.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\mss\\exception.py',
    'PYMODULE'),
   ('PIL.Image',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\Image.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\Image.py',
    'PYMODULE'),
   ('PIL.XpmImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageFile',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageFile.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageFile.py',
    'PYMODULE'),
   ('PIL.XbmImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
    'PYMODULE'),
   ('PIL.XVThumbImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
    'PYMODULE'),
   ('PIL.WmfImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
    'PYMODULE'),
   ('PIL.WebPImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
    'PYMODULE'),
   ('PIL.TgaImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
    'PYMODULE'),
   ('PIL.SunImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\SunImagePlugin.py',
    'PYMODULE'),
   ('PIL.SpiderImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageTk',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageTk.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageTk.py',
    'PYMODULE'),
   ('PIL.SgiImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
    'PYMODULE'),
   ('PIL.PsdImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
    'PYMODULE'),
   ('PIL.PixarImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PdfImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfParser',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PdfParser.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PdfParser.py',
    'PYMODULE'),
   ('PIL.ImageSequence',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageSequence.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageSequence.py',
    'PYMODULE'),
   ('PIL.PcxImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
    'PYMODULE'),
   ('PIL.PcdImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
    'PYMODULE'),
   ('PIL.PalmImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
    'PYMODULE'),
   ('PIL.MspImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\MspImagePlugin.py',
    'PYMODULE'),
   ('PIL.MpoImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
    'PYMODULE'),
   ('PIL.MpegImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
    'PYMODULE'),
   ('PIL.MicImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\MicImagePlugin.py',
    'PYMODULE'),
   ('PIL.McIdasImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
    'PYMODULE'),
   ('PIL.Jpeg2KImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
    'PYMODULE'),
   ('PIL.IptcImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImtImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImImagePlugin.py',
    'PYMODULE'),
   ('PIL.IcoImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
    'PYMODULE'),
   ('PIL.IcnsImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\IcnsImagePlugin.py',
    'PYMODULE'),
   ('PIL.features',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\features.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\features.py',
    'PYMODULE'),
   ('PIL.Hdf5StubImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
    'PYMODULE'),
   ('PIL.GribStubImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
    'PYMODULE'),
   ('PIL.GbrImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
    'PYMODULE'),
   ('PIL.FtexImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
    'PYMODULE'),
   ('PIL.FpxImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
    'PYMODULE'),
   ('PIL.FliImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\FliImagePlugin.py',
    'PYMODULE'),
   ('PIL.FitsStubImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
    'PYMODULE'),
   ('PIL.FitsImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\FitsImagePlugin.py',
    'PYMODULE'),
   ('PIL.EpsImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
    'PYMODULE'),
   ('PIL.DdsImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
    'PYMODULE'),
   ('PIL.DcxImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
    'PYMODULE'),
   ('PIL.CurImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\CurImagePlugin.py',
    'PYMODULE'),
   ('PIL.BufrStubImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
    'PYMODULE'),
   ('PIL.BlpImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
    'PYMODULE'),
   ('PIL.TiffImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\TiffImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageOps',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageOps.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageOps.py',
    'PYMODULE'),
   ('PIL.ImageShow',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageShow.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageShow.py',
    'PYMODULE'),
   ('PIL.ImageQt',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageQt.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageQt.py',
    'PYMODULE'),
   ('PIL.ImageColor',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageColor.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageColor.py',
    'PYMODULE'),
-  ('colorsys', 'N:\\Python39\\lib\\colorsys.py', 'PYMODULE'),
+  ('colorsys',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\colorsys.py',
+   'PYMODULE'),
   ('PIL.ImageFilter',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageFilter.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageFilter.py',
    'PYMODULE'),
   ('PIL.PyAccess',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PyAccess.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PyAccess.py',
    'PYMODULE'),
   ('PIL.ImagePalette',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImagePalette.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImagePalette.py',
    'PYMODULE'),
   ('PIL.PaletteFile',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PaletteFile.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PaletteFile.py',
    'PYMODULE'),
   ('PIL.GimpPaletteFile',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\GimpPaletteFile.py',
    'PYMODULE'),
   ('PIL.GimpGradientFile',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\GimpGradientFile.py',
    'PYMODULE'),
   ('PIL.PngImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PngImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageChops',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageChops.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageChops.py',
    'PYMODULE'),
   ('PIL.PpmImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\PpmImagePlugin.py',
    'PYMODULE'),
   ('PIL.JpegImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\JpegImagePlugin.py',
    'PYMODULE'),
   ('PIL.JpegPresets',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\JpegPresets.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\JpegPresets.py',
    'PYMODULE'),
   ('PIL.GifImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\GifImagePlugin.py',
    'PYMODULE'),
   ('PIL.BmpImagePlugin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\BmpImagePlugin.py',
    'PYMODULE'),
   ('PIL._util',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\_util.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\_util.py',
    'PYMODULE'),
   ('PIL._deprecate',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\_deprecate.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\_deprecate.py',
    'PYMODULE'),
-  ('__future__', 'N:\\Python39\\lib\\__future__.py', 'PYMODULE'),
   ('PIL._binary',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\_binary.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\_binary.py',
    'PYMODULE'),
   ('PIL.TiffTags',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\TiffTags.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\TiffTags.py',
    'PYMODULE'),
   ('PIL.ImageMode',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\ImageMode.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\ImageMode.py',
    'PYMODULE'),
   ('PIL',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\__init__.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
   ('PIL._version',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\PIL\\_version.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\PIL\\_version.py',
    'PYMODULE'),
   ('pynput.keyboard',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\__init__.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\__init__.py',
    'PYMODULE'),
   ('pynput._util',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\__init__.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\__init__.py',
    'PYMODULE'),
   ('pynput._util.win32_vks',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\win32_vks.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\win32_vks.py',
    'PYMODULE'),
-  ('queue', 'N:\\Python39\\lib\\queue.py', 'PYMODULE'),
   ('six',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\six.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\six.py',
    'PYMODULE'),
   ('pynput.mouse',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\mouse\\__init__.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\mouse\\__init__.py',
    'PYMODULE'),
   ('pynput',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\__init__.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\__init__.py',
    'PYMODULE'),
   ('pynput.mouse._xorg',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\mouse\\_xorg.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\mouse\\_xorg.py',
    'PYMODULE'),
   ('pynput.mouse._win32',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\mouse\\_win32.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\mouse\\_win32.py',
    'PYMODULE'),
   ('pynput.mouse._dummy',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\mouse\\_dummy.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\mouse\\_dummy.py',
    'PYMODULE'),
   ('pynput.mouse._darwin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\mouse\\_darwin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\mouse\\_darwin.py',
    'PYMODULE'),
   ('pynput.mouse._base',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\mouse\\_base.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\mouse\\_base.py',
    'PYMODULE'),
   ('pynput.keyboard._xorg',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\_xorg.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\_xorg.py',
    'PYMODULE'),
   ('pynput.keyboard._win32',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\_win32.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\_win32.py',
    'PYMODULE'),
   ('pynput.keyboard._uinput',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\_uinput.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\_uinput.py',
    'PYMODULE'),
   ('pynput.keyboard._dummy',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\_dummy.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\_dummy.py',
    'PYMODULE'),
   ('pynput.keyboard._darwin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\_darwin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\_darwin.py',
    'PYMODULE'),
   ('pynput.keyboard._base',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\keyboard\\_base.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\keyboard\\_base.py',
    'PYMODULE'),
   ('pynput._util.xorg_keysyms',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\xorg_keysyms.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\xorg_keysyms.py',
    'PYMODULE'),
   ('pynput._util.xorg',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\xorg.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\xorg.py',
    'PYMODULE'),
   ('pynput._util.win32',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\win32.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\win32.py',
    'PYMODULE'),
   ('pynput._util.uinput',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\uinput.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\uinput.py',
    'PYMODULE'),
   ('pynput._util.darwin_vks',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\darwin_vks.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\darwin_vks.py',
    'PYMODULE'),
   ('pynput._util.darwin',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_util\\darwin.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_util\\darwin.py',
    'PYMODULE'),
   ('pynput._info',
-   'N:\\OneDrive\\Documents\\Programming\\bots\\Screen Shot '
-   'Queue\\.venv\\lib\\site-packages\\pynput\\_info.py',
+   'D:\\Users\\neils\\OneDrive\\Documents\\Programming\\Screen Shot '
+   'Queue\\.desktopVenv\\lib\\site-packages\\pynput\\_info.py',
    'PYMODULE'),
-  ('tkinter.ttk', 'N:\\Python39\\lib\\tkinter\\ttk.py', 'PYMODULE'),
-  ('tkinter', 'N:\\Python39\\lib\\tkinter\\__init__.py', 'PYMODULE'),
+  ('tkinter.filedialog',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\filedialog.py',
+   'PYMODULE'),
+  ('tkinter.simpledialog',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\simpledialog.py',
+   'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\commondialog.py',
+   'PYMODULE'),
+  ('tkinter.dialog',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\dialog.py',
+   'PYMODULE'),
+  ('tkinter.ttk',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\ttk.py',
+   'PYMODULE'),
+  ('tkinter',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\__init__.py',
+   'PYMODULE'),
   ('tkinter.constants',
-   'N:\\Python39\\lib\\tkinter\\constants.py',
+   'C:\\Users\\neils\\AppData\\Local\\Programs\\Python\\Python310\\lib\\tkinter\\constants.py',
    'PYMODULE')])
