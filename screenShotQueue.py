@@ -6,6 +6,7 @@ from PIL import Image
 import mss
 import glob
 from io import BytesIO
+import pywintypes
 import win32clipboard
 import os
 import sys
