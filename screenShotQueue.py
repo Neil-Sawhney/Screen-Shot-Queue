@@ -1,6 +1,6 @@
 import time
 import tkinter
-from tkinter import ttk
+from tkinter import ttk, filedialog
 from pynput import mouse, keyboard
 from PIL import Image
 import mss
@@ -10,6 +10,8 @@ import pywintypes
 import win32clipboard
 import os
 import sys
+import shutil
+import nbformat as nbf
 
 class stuff(object):
     presses = set()
@@ -49,7 +51,7 @@ class stuff(object):
 
             sct_img = sct.grab(monitor)
             mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
-        print("im" + str(self.imgNum) + " saved")
+        print("im" + str(self.imgNum + 1) + " saved")
         self.imgNum += 1
 
     def on_move(self, x, y):
@@ -110,7 +112,7 @@ s = stuff()
 # Print instructions
 print("Press alt + 1 to remove a point")
 print("Press alt + 2 to add a point")
-print("Press alt + 3 to paste all and exit")
+print("Press alt + 3 when done")
 
 
 with mouse.Listener(on_move=s.on_move) as listener:
@@ -118,7 +120,7 @@ with mouse.Listener(on_move=s.on_move) as listener:
         listener.join()
 
 ###################### DO STUFF ##################### 
-def pasteAll():
+def pasteAll(numOfEnters):
     for i in range(s.imgNum):
         time.sleep(s.sleepTime)
         s.send_to_clipboard(i)
@@ -130,32 +132,58 @@ def pasteAll():
         keyboard.Controller().release(keyboard.Key.ctrl)
         keyboard.Controller().release('v')
 
+        for j in range(numOfEnters):
+            time.sleep(s.sleepTime)
+            keyboard.Controller().press(keyboard.Key.enter)
+            keyboard.Controller().release(keyboard.Key.enter)
+
+def jupyterNotebook():
+    # ask for directory
+    root = tkinter.Tk()
+    root.withdraw()
+    directory = filedialog.askdirectory()
+    root.destroy()
+
+    # create a new file
+    nb = nbf.v4.new_notebook()
+
+    # copy all images in .\images to the new directory
+    files = os.listdir(".\\images")
+    for f in files:
+        shutil.copy(".\\images\\" + f, directory + "\\images\\" + f)
+        #add json for this image to the file
+        markdown = "![" + f + "](images\\" + f + ")"
+        nb['cells'].append(nbf.v4.new_markdown_cell(markdown))
+
+    nbf.write(nb, directory + "\\jupyterNotebook.ipynb")
+    os.startfile(directory + "\\jupyterNotebook.ipynb")
+
+
 
 # ask the user if they want to paste all images or just open the folder
-
 popup = tkinter.Tk()
-
 # make the popup appear on top of everything
 popup.wm_attributes("-topmost", 1)
-
 # resize 
 popup.geometry("300x150")
-
 # make the popup not resizable
 popup.resizable(0,0)
-
 # make the popup the active window
 popup.focus_force()
 
 Label = ttk.Label(popup, text="CHOOSE NOW")
 Label.pack()
-B1 = ttk.Button(popup, text="Dont Paste", command = lambda: [popup.destroy, os.startfile(".\\images"), sys.exit()])
-
-# make B1 the default button
+B1 = ttk.Button(popup, text="Just Open Folder", command = lambda: [popup.destroy, os.startfile(".\\images"), sys.exit()])
+B2 = ttk.Button(popup, text="Paste Normally", command = lambda: [popup.destroy, pasteAll(0), os.startfile(".\\images"), sys.exit()])
+B3 = ttk.Button(popup, text="Paste with Enter", command = lambda: [popup.destroy, pasteAll(1), os.startfile(".\\images"), sys.exit()])
+B4 = ttk.Button(popup, text="Paste with double Enter", command = lambda: [popup.destroy, pasteAll(2), os.startfile(".\\images"), sys.exit()])
+B5 = ttk.Button(popup, text="Jupyter Notebook", command = lambda: [popup.destroy, jupyterNotebook(), sys.exit()])
 B1.pack()
+B2.pack()
+B3.pack()
+B4.pack()
+B5.pack()
+
 popup.mainloop()
 
-
-# Open the folder with the images
-pasteAll()
 os.startfile(".\\images")
