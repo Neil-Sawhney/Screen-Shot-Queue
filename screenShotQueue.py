@@ -165,7 +165,8 @@ with mouse.Listener(on_move=s.on_move) as listener:
         listener.join()
 
 ###################### DO STUFF ##################### 
-def pasteAll(numOfEnters):
+def pasteAll(numOfEnters, popup):
+    popup.destroy()
     for i in range(s.imgNum):
         time.sleep(s.sleepTime)
         s.send_to_clipboard(i)
@@ -189,11 +190,20 @@ def jupyterNotebook():
     directory = filedialog.askdirectory()
     root.destroy()
 
+    # make a new directory
+    newDir = directory + "\\images"
+    if not os.path.exists(newDir):
+        os.makedirs(newDir)
+
     # create a new file
     nb = nbf.v4.new_notebook()
 
     # copy all images in .\images to the new directory
     files = os.listdir(".\\images")
+
+    # sort the images by name
+    files.sort(key=lambda f: int(re.sub('\D', '', f)))
+
     for f in files:
         shutil.copy(".\\images\\" + f, directory + "\\images\\" + f)
         #add json for this image to the file
@@ -237,9 +247,9 @@ popup.focus_force()
 Label = ttk.Label(popup, text="CHOOSE NOW")
 Label.pack()
 B1 = ttk.Button(popup, text="Just Open Folder", command = lambda: [popup.destroy, os.startfile(".\\images"), sys.exit()])
-B2 = ttk.Button(popup, text="Paste Normally", command = lambda: [popup.destroy, pasteAll(0), os.startfile(".\\images"), sys.exit()])
-B3 = ttk.Button(popup, text="Paste with Enter", command = lambda: [popup.destroy, pasteAll(1), os.startfile(".\\images"), sys.exit()])
-B4 = ttk.Button(popup, text="Paste with double Enter", command = lambda: [popup.destroy, pasteAll(2), os.startfile(".\\images"), sys.exit()])
+B2 = ttk.Button(popup, text="Paste Normally", command = lambda: [popup.destroy, pasteAll(0, popup), os.startfile(".\\images"), sys.exit()])
+B3 = ttk.Button(popup, text="Paste with Enter", command = lambda: [popup.destroy, pasteAll(1, popup), os.startfile(".\\images"), sys.exit()])
+B4 = ttk.Button(popup, text="Paste with double Enter", command = lambda: [popup.destroy, pasteAll(2, popup), os.startfile(".\\images"), sys.exit()])
 B5 = ttk.Button(popup, text="Jupyter Notebook", command = lambda: [popup.destroy, jupyterNotebook(), sys.exit()])
 B6 = ttk.Button(popup, text="Create PDF", command = lambda: [popup.destroy, createPdf(), sys.exit()])
 B1.pack()
