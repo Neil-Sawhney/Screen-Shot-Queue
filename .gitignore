@@ -1,7 +1,0 @@
-./.venv/
-./.desktopVenv/
-./*.lnk
-./screenShotQueue.exe
-./.vscode/
-./dist/
-./build/
