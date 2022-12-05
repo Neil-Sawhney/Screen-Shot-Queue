@@ -52,9 +52,9 @@ class stuff(object):
 
                 # convert num to left padded string
                 num = str(self.imgNum)
-                num = num.zfill(3)
+                num = num.zfill(4)
 
-                output = ".\\images\\im" + num + ".png"
+                output = ".\\images\\" + num + ".png"
 
                 sct_img = sct.grab(monitor)
                 mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
@@ -197,8 +197,7 @@ def jupyterNotebook():
 
     # make a new directory
     newDir = directory + "\\images"
-    if not os.path.exists(newDir):
-        os.makedirs(newDir)
+    os.makedirs(newDir)
 
     # create a new file
     nb = nbf.v4.new_notebook()
@@ -224,6 +223,10 @@ def createPdf():
     root.withdraw()
     pdf_path = filedialog.askdirectory()
     root.destroy()
+
+    # make a new directory
+    newDir = pdf_path + "\\images"
+    os.makedirs(newDir)
 
     # copy all images in .\images to the new directory
     files = os.listdir(".\\images")

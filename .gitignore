@@ -1,3 +1,7 @@
 ./.venv/
 ./.desktopVenv/
-./*.ink
+./*.lnk
+./screenShotQueue.exe
+./.vscode/
+./dist/
+./build/
