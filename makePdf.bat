@@ -1,1 +1,0 @@
-wsl img2pdf ./images/*.png -o ./1.pdf

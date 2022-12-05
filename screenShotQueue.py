@@ -49,7 +49,12 @@ class stuff(object):
         try:
             with mss.mss() as sct:
                 monitor = {"top": x1y1[1], "left": x1y1[0], "width": x2y2[0] - x1y1[0], "height": x2y2[1] - x1y1[1]}
-                output = ".\\images\\im" + str(self.imgNum) + ".png"
+
+                # convert num to left padded string
+                num = str(self.imgNum)
+                num = num.zfill(3)
+
+                output = ".\\images\\im" + num + ".png"
 
                 sct_img = sct.grab(monitor)
                 mss.tools.to_png(sct_img.rgb, sct_img.size, output=output)
