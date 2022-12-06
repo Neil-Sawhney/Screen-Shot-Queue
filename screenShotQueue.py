@@ -211,7 +211,7 @@ def jupyterNotebook():
     for f in files:
         shutil.copy(".\\images\\" + f, directory + "\\images\\" + f)
         #add json for this image to the file
-        markdown = "![" + f + "](images\\" + f + ")"
+        markdown = "![" + f + "](images/" + f + ")"
         nb['cells'].append(nbf.v4.new_markdown_cell(markdown))
 
     nbf.write(nb, directory + "\\jupyterNotebook.ipynb")
