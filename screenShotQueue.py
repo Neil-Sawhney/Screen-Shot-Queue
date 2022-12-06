@@ -275,5 +275,3 @@ B5.pack()
 B6.pack()
 
 popup.mainloop()
-
-os.startfile(".\\images")
