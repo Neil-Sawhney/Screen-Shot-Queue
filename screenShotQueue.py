@@ -202,10 +202,9 @@ def pasteAll(numOfEnters, popup):
 def jupyterNotebook():
 	root = tkinter.Tk()
 	root.withdraw()
-	root.destroy()
-
 	# save as file name with default name output.pdf
-	pdf_path = filedialog.asksaveasfilename(defaultextension=".pdf", initialfile='output.pdf')
+	pdf_path = filedialog.asksaveasfilename(defaultextension=".ipynb", initialfile='jupyterNotebook.ipynb')
+	root.destroy()
 
 	pdf_directory = os.path.dirname(pdf_path)
 
@@ -239,10 +238,9 @@ def createPdf():
 	# ask for directory
 	root = tkinter.Tk()
 	root.withdraw()
-	root.destroy()
-
 	# save as file name with default name output.pdf
 	pdf_path = filedialog.asksaveasfilename(defaultextension=".pdf", initialfile='output.pdf')
+	root.destroy()
 
 	pdf_directory = os.path.dirname(pdf_path)
 
