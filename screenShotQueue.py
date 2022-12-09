@@ -59,14 +59,6 @@ class stuff(object):
 				num = str(self.imgNum)
 				num = num.zfill(4)
 
-				try:
-					newDir = ".\\images"
-					os.makedirs(newDir)
-				except OSError:
-					print ("Creation of the images directory failed, it may already exist")
-					print ("Consider putting the exe in its own folder")
-					exit()
-
 				output = ".\\images\\" + num + ".png"
 
 				sct_img = sct.grab(monitor)
@@ -171,6 +163,14 @@ class stuff(object):
 
 
 s = stuff()
+
+try:
+	newDir = ".\\images"
+	os.makedirs(newDir)
+except OSError:
+	print ("Creation of the images directory failed, it may already exist")
+	print ("Consider putting the exe in its own folder")
+	exit()
 
 # Print instructions
 print("Press alt + 1 to remove a point")

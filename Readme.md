@@ -2,4 +2,4 @@ python 3.9.13
 
 pyinstaller screenShotQueue.spec
 
-move exe from dist into main directory 
+exe will be in dist directory
