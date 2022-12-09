@@ -6,4 +6,4 @@ pyinstaller screenShotQueue.spec
 
 exe will be in dist directory
 
-if you move the exe, put it in its own directory
+dont move the exe, just make a shortcut if you need one
