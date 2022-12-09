@@ -168,9 +168,7 @@ try:
 	newDir = ".\\images"
 	os.makedirs(newDir)
 except OSError:
-	print ("Creation of the images directory failed, it may already exist")
-	print ("Consider putting the exe in its own folder")
-	exit()
+	pass
 
 # Print instructions
 print("Press alt + 1 to remove a point")
@@ -202,15 +200,18 @@ def pasteAll(numOfEnters, popup):
 			keyboard.Controller().release(keyboard.Key.enter)
 
 def jupyterNotebook():
-	# ask for directory
 	root = tkinter.Tk()
 	root.withdraw()
-	directory = filedialog.askdirectory()
 	root.destroy()
+
+	# save as file name with default name output.pdf
+	pdf_path = filedialog.asksaveasfilename(defaultextension=".pdf", initialfile='output.pdf')
+
+	pdf_directory = os.path.dirname(pdf_path)
 
 	# make a new directory
 	try:
-		newDir = directory + "\\images"
+		newDir = pdf_directory + "\\images"
 		os.makedirs(newDir)
 	except OSError:
 		print ("Creation of the images directory failed, it may already exist")
@@ -226,33 +227,24 @@ def jupyterNotebook():
 	files.sort(key=lambda f: int(re.sub('\D', '', f)))
 
 	for f in files:
-		shutil.copy(".\\images\\" + f, directory + "\\images\\" + f)
+		shutil.copy(".\\images\\" + f, pdf_directory + "\\images\\" + f)
 		#add json for this image to the file
 		markdown = "![" + f + "](images/" + f + ")"
 		nb['cells'].append(nbf.v4.new_markdown_cell(markdown))
 
-	nbf.write(nb, directory + "\\jupyterNotebook.ipynb")
-	os.startfile(directory + "\\jupyterNotebook.ipynb")
+	nbf.write(nb, pdf_path)
+	os.startfile(pdf_directory)
 
 def createPdf():
 	# ask for directory
 	root = tkinter.Tk()
 	root.withdraw()
-	pdf_path = filedialog.askdirectory()
 	root.destroy()
 
-	# make a new directory
-	try:
-		newDir = pdf_path + "\\images"
-		os.makedirs(newDir)
-	except OSError:
-		print ("Creation of the images directory failed, it may already exist")
-		exit()
+	# save as file name with default name output.pdf
+	pdf_path = filedialog.asksaveasfilename(defaultextension=".pdf", initialfile='output.pdf')
 
-	# copy all images in .\images to the new directory
-	files = os.listdir(".\\images")
-	for f in files:
-		shutil.copy(".\\images\\" + f, pdf_path + "\\images\\" + f)
+	pdf_directory = os.path.dirname(pdf_path)
 
 	# get the images from the images folder
 	files = os.listdir(".\\images")
@@ -261,10 +253,9 @@ def createPdf():
 	
 	# create a new pdf using PIL
 	im1 = Image.open(".\\images\\" + files[0])
-	im1.save(pdf_path + "\\output.pdf", "PDF" ,resolution=100.0, save_all=True, append_images=[Image.open(".\\images\\" + f) for f in files[1:]])
+	im1.save(pdf_path, "PDF" ,resolution=100.0, save_all=True, append_images=[Image.open(".\\images\\" + f) for f in files[1:]])
 
-	os.startfile(pdf_path)
-	os.startfile(pdf_path + "\\output.pdf")
+	os.startfile(pdf_directory)
 
 
 # ask the user if they want to paste all images or just open the folder
