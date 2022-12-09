@@ -59,6 +59,14 @@ class stuff(object):
 				num = str(self.imgNum)
 				num = num.zfill(4)
 
+				try:
+					newDir = ".\\images"
+					os.makedirs(newDir)
+				except OSError:
+					print ("Creation of the images directory failed, it may already exist")
+					print ("Consider putting the exe in its own folder")
+					exit()
+
 				output = ".\\images\\" + num + ".png"
 
 				sct_img = sct.grab(monitor)
@@ -201,8 +209,12 @@ def jupyterNotebook():
 	root.destroy()
 
 	# make a new directory
-	newDir = directory + "\\images"
-	os.makedirs(newDir)
+	try:
+		newDir = directory + "\\images"
+		os.makedirs(newDir)
+	except OSError:
+		print ("Creation of the images directory failed, it may already exist")
+		exit()
 
 	# create a new file
 	nb = nbf.v4.new_notebook()
@@ -230,8 +242,12 @@ def createPdf():
 	root.destroy()
 
 	# make a new directory
-	newDir = pdf_path + "\\images"
-	os.makedirs(newDir)
+	try:
+		newDir = pdf_path + "\\images"
+		os.makedirs(newDir)
+	except OSError:
+		print ("Creation of the images directory failed, it may already exist")
+		exit()
 
 	# copy all images in .\images to the new directory
 	files = os.listdir(".\\images")
@@ -250,6 +266,7 @@ def createPdf():
 	os.startfile(pdf_path)
 	os.startfile(pdf_path + "\\output.pdf")
 
+
 # ask the user if they want to paste all images or just open the folder
 popup = tkinter.Tk()
 # make the popup appear on top of everything
@@ -257,7 +274,7 @@ popup.wm_attributes("-topmost", 1)
 # make the popup the active window
 popup.focus_force()
 # make the popup appear in the top right corner
-popup.geometry("+%d+%d" % (popup.winfo_screenwidth()-300, 0))
+popup.geometry("+%d+%d" % (popup.winfo_screenwidth()-350, 0))
 
 Label = ttk.Label(popup, text="CHOOSE NOW")
 Label.pack()
