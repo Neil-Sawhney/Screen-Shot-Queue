@@ -20,13 +20,8 @@ class stuff(object):
 	leftArray = []
 	sleepTime = 0.4
 
-	def send_to_clipboard(self, imgNum):
-		num = str(imgNum)
-		num = num.zfill(4)
-
-		output = ".\\images\\" + num + ".png"
-
-		image = Image.open(output)
+	def send_to_clipboard(self, filePath):
+		image = Image.open(filePath)
 		output = BytesIO()
 		image.convert("RGB").save(output, "BMP")
 		data = output.getvalue()[14:]
@@ -183,9 +178,16 @@ with mouse.Listener(on_move=s.on_move) as listener:
 ###################### DO STUFF ##################### 
 def pasteAll(numOfEnters, popup):
 	popup.destroy()
-	for i in range(s.imgNum):
+
+	# find all images in .\images
+	files = os.listdir(".\\images")
+
+	# sort the images by name
+	files.sort(key=lambda f: int(re.sub('\D', '', f)))
+
+	for f in files:
 		time.sleep(s.sleepTime)
-		s.send_to_clipboard(i)
+		s.send_to_clipboard(".\\images\\" + f)
 		time.sleep(s.sleepTime)
 
 		#press ctrl v
