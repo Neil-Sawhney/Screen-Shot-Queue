@@ -13,6 +13,7 @@ import sys
 import shutil
 import nbformat as nbf
 import re
+import base64
 
 class stuff(object):
 	presses = set()
@@ -210,14 +211,6 @@ def jupyterNotebook():
 
 	pdf_directory = os.path.dirname(pdf_path)
 
-	# make a new directory
-	try:
-		newDir = pdf_directory + "\\images"
-		os.makedirs(newDir)
-	except OSError:
-		print ("Creation of the images directory failed, it may already exist")
-		exit()
-
 	# create a new file
 	nb = nbf.v4.new_notebook()
 
@@ -228,10 +221,15 @@ def jupyterNotebook():
 	files.sort(key=lambda f: int(re.sub('\D', '', f)))
 
 	for f in files:
-		shutil.copy(".\\images\\" + f, pdf_directory + "\\images\\" + f)
-		#add json for this image to the file
-		markdown = "![" + f + "](images/" + f + ")"
-		nb['cells'].append(nbf.v4.new_markdown_cell(markdown))
+		with open(".\\images\\" + f, 'rb') as f:
+			encoded_image = base64.b64encode(f.read()).decode('utf-8')
+		
+		markdown = "![image.png](attachment:image.png)"
+		
+		cell = nbf.v4.new_markdown_cell(markdown)
+		cell['attachments'] = {'image.png': {'image/png': encoded_image}} 
+
+		nb['cells'].append(cell)
 
 	nbf.write(nb, pdf_path)
 	os.startfile(pdf_directory)
